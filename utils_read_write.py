@@ -1,5 +1,5 @@
 import numpy as np
-from elemNumDir import num_to_elem
+#from elemNumDir import num_to_elem
 
 
 class utils_read_write:
@@ -59,7 +59,8 @@ class utils_read_write:
             outfile.write("%i\n\n" % (len(mol)))
             
             for atomidx, atom in enumerate(mol):
-                outfile.write("%s %f %f %f\n" %(num_to_elem[int(elements[molidx][atomidx])], atom[0], atom[1], atom[2]))
+ #               outfile.write("%s %f %f %f\n" %(num_to_elem[int(elements[molidx][atomidx])], atom[0], atom[1], atom[2]))
+                pass
 
     def export_xyz_single(self, coord, elements, filename):
         outfile = open(filename, "w")
